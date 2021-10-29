@@ -108,8 +108,20 @@ function addListeners() {
 
 function addReadToggle() {
     let toggleBtns = document.querySelectorAll(".toogleBtn")
-    toggleBtns.forEach(element => { 
-        let title = element.parentNode.querySelectorAll("li")[0].textContent.split(":")
-        console.log(title)
+    toggleBtns.forEach(element => {
+        element.addEventListener("click", event => {
+            let title = element.parentNode.querySelectorAll("li")[0].textContent.split(":")[1].trim()
+            myLibrary.forEach(book => {
+                if (book.Title == title){
+                    if(book.Read == "Already read") {
+                        book.Read = "Not read yet"
+                    }
+                    else {
+                        book.Read = "Already read"
+                    }
+                }
+            displayBooks(myLibrary)
+            })
+        }) 
     });
 }
