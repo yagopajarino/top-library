@@ -34,10 +34,10 @@ function displayBooks(colection) {
         let removeBtn = document.createElement("button")
         removeBtn.classList.toggle("removeBtn")
         removeBtn.id = book.Title
-        removeBtn.textContent = "X"
+        removeBtn.textContent = "Remove"
         let readBtn = document.createElement("button")
         readBtn.classList.toggle("toogleBtn")
-        readBtn.textContent = "R"
+        readBtn.textContent = "Read"
         bookCard.appendChild(readBtn)
         bookCard.appendChild(removeBtn)
         let infoList = document.createElement("ul")

@@ -4,7 +4,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("./statics/bg_bggenerator_com.png");
+    background-color: rgb(223 198 198);
     background-size:auto;
     text-align: center;
 }
@@ -12,7 +12,7 @@ body {
 
 h1 {
     padding: 20px 0;
-    background-color: #3d759d8c;
+    background-color: #bee4ff;
     border-radius: 15px;
     color: black;
     margin: 30px 35% 30px 35%;
@@ -24,9 +24,13 @@ ul {
     padding: 0;
     text-align: left;
 }
+li {
+    padding: 5px 0;
+    font-size: 30px;
+}
 
 .removeBtn {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255 133 133);
 }
 
 .removeBtn, .toogleBtn {
@@ -36,10 +40,12 @@ ul {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-    width: 25px;
-    height: 25px;
+    width: auto;
+    height: 35px;
     min-width: 0px;
-    margin: 8px
+    margin: 8px;
+    padding: 0 10px;
+    font-size: 25px;
 }
 
 .bookContainer {
@@ -47,11 +53,6 @@ ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.bookCard {
-    padding-bottom: 10px;
-    margin: 10px;
 }
 
 .newBookForm {
@@ -65,7 +66,7 @@ ul {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(10px);
     height: 100vh;
     width: 100%;    
 }
@@ -116,8 +117,9 @@ input:focus-visible, select:focus-visible {
 }
 
 .bookCard {
-    padding: 10px;
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
     border-radius: 5px;
+    margin: 10px;
 }
