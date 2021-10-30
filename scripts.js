@@ -34,10 +34,12 @@ function displayBooks(colection) {
         let removeBtn = document.createElement("button")
         removeBtn.classList.toggle("removeBtn")
         removeBtn.id = book.Title
+        removeBtn.textContent = "X"
         let readBtn = document.createElement("button")
         readBtn.classList.toggle("toogleBtn")
-        bookCard.appendChild(removeBtn)
+        readBtn.textContent = "R"
         bookCard.appendChild(readBtn)
+        bookCard.appendChild(removeBtn)
         let infoList = document.createElement("ul")
         let datos = ["Title","Author","Pages","Read"]
         datos.forEach(key => {
@@ -58,7 +60,7 @@ btn.addEventListener("click", toggleForm)
 function toggleForm() {
     let form = document.querySelector(".newBookForm")
     if (form.style.display === "none") {
-        form.style.display = "block";
+        form.style.display = "";
     } else {
     form.style.display = "none";
     }
