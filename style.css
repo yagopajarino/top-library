@@ -1,104 +1,105 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(223 198 198);
-    background-size:auto;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(99 105 129);
+  background-size: auto;
+  text-align: center;
 }
 
-
 h1 {
-    padding: 20px 0;
-    background-color: #bee4ff;
-    border-radius: 15px;
-    color: black;
-    margin: 30px 35% 30px 35%;
+  padding: 20px 0;
+  background-color: #cfcb8a;
+  border-radius: 5px;
+  color: black;
+  margin: 30px 35% 30px 35%;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 li {
-    padding: 5px 0;
-    font-size: 30px;
+  padding: 5px 0;
+  font-size: 30px;
 }
 
 .removeBtn {
-    background-color: rgb(255 133 133);
+  background-color: rgb(255 133 133);
 }
 
-.removeBtn, .toogleBtn {
-    color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    width: auto;
-    height: 35px;
-    min-width: 0px;
-    margin: 8px;
-    padding: 0 10px;
-    font-size: 25px;
+.removeBtn,
+.toogleBtn {
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: auto;
+  height: 35px;
+  min-width: 0px;
+  margin: 8px;
+  padding: 0 10px;
+  font-size: 25px;
 }
 
 .bookContainer {
-    padding: 20px 20%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  padding: 20px 20%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .newBookForm {
-    display: block;
-    position:absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    height: 100vh;
-    width: 100%;    
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100%;
 }
 
 .formInput {
-    display: flex;
-    justify-content: space-between;
-    min-width: 340px;
-    padding: 10px 8px 10px 8px; 
-    font-size: 18px;
-    backdrop-filter: blur(10px);
-    margin: 2px;
-    border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 420px;
+  padding: 10px 8px 10px 8px;
+  font-size: 30px;
+  backdrop-filter: blur(10px);
+  margin: 2px;
+  border-radius: 3px;
 }
 
 .btnsDiv {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
-input, select, button {
-    -webkit-appearance: none;
-    border: none;
-    border-radius: 2px;
-    min-width: 150px;
+input,
+select,
+button {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 2px;
+  min-width: 150px;
 }
 
-#readSelector{
-    width: 154px;
-    text-align: center;
-    font-size: 15px;
+#readSelector {
+  width: 154px;
+  text-align: center;
+  font-size: 15px;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -106,20 +107,27 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input:focus-visible, select:focus-visible {
-    -webkit-appearance: none;
-    outline-color: transparent;
+input:focus-visible,
+select:focus-visible {
+  -webkit-appearance: none;
+  outline-color: transparent;
 }
 
-#saveBtn, #cancelBtn, .addBtn {
-    font-size: 15px;
-    padding: 9px 3px;
+.addBtn {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+#saveBtn,
+#cancelBtn {
+  font-size: 15px;
+  padding: 9px 3px;
 }
 
 .bookCard {
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
-    margin: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  margin: 10px;
 }

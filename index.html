@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="./scripts.js" defer></script>
-        <link href="./style.css" rel="stylesheet">
-    </head>
-    <title>Library</title>
-    <body>
-        <h1>Library</h1>
-        <button class="addBtn">Add book</button>
-        <form action="javascript:void(0);" class="newBookForm" style="display: none;">
-            <div class="formInput">
-                <label>Title</label>
-                <input name="title" type="text" autocomplete="off">
-            </div>
-            <div class="formInput">
-                <label>Autor</label>
-                <input name="author" type="text" autocomplete="off">
-            </div>
-            <div class="formInput">
-                <label>Pages</label>
-                <input name="pages" type="number" autocomplete="off">
-            </div>
-            <div class="formInput">
-                <label>Have you read it?</label>
-                <select name="read" id="readSelector">
-                    <option id="noOption" value="false" selected>No</option>
-                    <option value="true">Yes</option>
-                </select>
-            </div>
-            <div class="btnsDiv">
-                <button id="saveBtn">Save</button>
-                <button id="cancelBtn">Cancel</button>
-            </div>
-        </form>
-    </body>
+  <head>
+    <script src="./scripts.js" defer></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <title>Library</title>
+  <body>
+    <h1>Library</h1>
+    <button class="addBtn">Add book</button>
+    <form
+      action="javascript:void(0);"
+      class="newBookForm"
+      style="display: none"
+    >
+      <div class="formInput">
+        <label>Title</label>
+        <input name="title" type="text" autocomplete="off" required />
+      </div>
+      <div class="formInput">
+        <label>Autor</label>
+        <input name="author" type="text" autocomplete="off" required />
+      </div>
+      <div class="formInput">
+        <label>Pages</label>
+        <input name="pages" type="number" autocomplete="off" required />
+      </div>
+      <div class="formInput">
+        <label>Have you read it?</label>
+        <select name="read" id="readSelector">
+          <option id="noOption" value="false" selected>No</option>
+          <option value="true">Yes</option>
+        </select>
+      </div>
+      <div class="btnsDiv">
+        <button id="saveBtn">Save</button>
+        <button id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </body>
 </html>
