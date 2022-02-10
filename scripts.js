@@ -82,10 +82,9 @@ function cleanForm() {
   nop.selected = true;
 }
 
-const saveBtn = document.querySelector("#saveBtn");
-saveBtn.addEventListener("click", (event) => {
+function saveBook(){
   const form = document.querySelector(".newBookForm");
-  const inputs = form.querySelectorAll("input");
+  const inputs = document.querySelectorAll("input")
   const selection = form.querySelectorAll("option");
   const options = Array.from(selection);
   const data = [];
@@ -99,7 +98,7 @@ saveBtn.addEventListener("click", (event) => {
   addBookToLibrary(data);
   toggleForm();
   cleanForm();
-});
+}
 
 function addListeners() {
   const removeBtns = document.querySelectorAll(".removeBtn");
@@ -130,12 +129,5 @@ function addReadToggle() {
         displayBooks(myLibrary);
       });
     });
-  });
-}
-
-function checkValid() {
-  const inputs = document.querySelectorAll("input");
-  inputs.forEach((input) => {
-    input.addEventListener("input", () => {});
   });
 }
