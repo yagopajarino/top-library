@@ -15,6 +15,7 @@ Book.prototype.info = function () {
 function addBookToLibrary(data) {
   const b = new Book(data[0], data[1], data[2], data[3]);
   myLibrary.push(b);
+  console.log(myLibrary);
   displayBooks(myLibrary);
 }
 
@@ -82,19 +83,17 @@ function cleanForm() {
   nop.selected = true;
 }
 
-function saveBook(){
+function saveBook() {
   const form = document.querySelector(".newBookForm");
-  const inputs = document.querySelectorAll("input")
+  const inputs = document.querySelectorAll("input");
   const selection = form.querySelectorAll("option");
   const options = Array.from(selection);
   const data = [];
   inputs.forEach((element) => {
     data.push(element.value);
   });
-  const n = options.filter((element) => element.selected == true);
-  data.push(n);
-  const selector = form.querySelectorAll("select");
-  data.push(selector.value);
+  const selector = form.querySelector("select");
+  data.push(selector.value != "false");
   addBookToLibrary(data);
   toggleForm();
   cleanForm();
